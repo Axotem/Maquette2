@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Maquette 2</title>
+</head>
+
+<body>
+  <header class="flex column">
+    <div class="menu flex">
+      <h1>TRELOO</h1>
+      <nav>
+        <div class="flex">
+          <a href="">REVIEW</a>
+          <a href="">TIPS</a>
+          <a href="">ALERTS</a>
+          <a href="">BLOG</a>
+          <input type="button" class="bouton" value="LOG IN">
+        </div>
+      </nav>
+    </div>
+    <div class="titre flex column ">
+      <h2>Discover Your Life, Travel Where You Want</h2>
+      <p>Would you explore natur paradise in the world, lets find the best destination in the world with us.</p>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- SeCTION 1 : FORMULAIRE DE SAISIE -->
+    <section class="main_form flex">
+      <form action="" method="">
+        <div class="flex justify_around align_center main_form_filter">
+          <button class="active_filter">
+            <i class="bi bi-airplane-fill blue_picto"></i> Flight
+          </button>
+          <button>
+            <i class="bi bi-house-door-fill blue_picto"></i>Hotel
+          </button>
+        </div>
+
+        <div class="main_form_select flex justify_between">
+          <div class="flex align_center select_field">
+            <div>
+              <label for="from">Living From</label>
+              <input list="cities" id="from" name="living_from" size="12" placeholder="Select a city" />
+            </div>
+            <i class="bi bi-airplane-fill"></i>
+            <div>
+              <label for="to">Going to</label>
+              <input list="cities" id="to" name="going_to" size="12" placeholder="Select a city" />
+            </div>
+            <datalist id="cities">
+              <option value="Paris"></option>
+              <option value="Dubai"></option>
+              <option value="Tokyo"></option>
+              <option value="New York"></option>
+              <option value="London"></option>
+            </datalist>
+          </div>
+
+          <div class="flex align_center select_field">
+            <div>
+              <label for="leave">
+                Leave <i class="bi bi-airplane-fill"></i>
+              </label>
+              <input type="date" id="leave" name="leave_date" size="12" />
+            </div>
+            <i class="bi bi-calendar-event-fill"></i>
+            <!-- <i class="bi bi-backspace-reverse-fill"></i> -->
+            <div>
+              <label for="return">
+                Return <i class="bi bi-airplane-fill"></i>
+              </label>
+              <input type="date" id="to" name="return_date" size="12" />
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="submit blue_button_inverted">
+              <!--<i class="bi bi-search" style="width: 20px; height: 20px;"></i> -->
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- SECTION 2 : SPECIAL UPCOMING OFFERS -->
+    <section>
+      <h2 class="section_title flex">Special upcoming offers</h2>
+      <div class="offers_menu flex">
+        <button class="button_small blue_button_inverted">Team</button>
+        <button class="button_small offers_button">Couple</button>
+        <button class="button_small offers_button">Family</button>
+      </div>
+
+      <div class="flex center">
+        <article class="offers_item">
+          <div class="flex justify_between">
+            <img alt="" src="./images/image2.png" />
+            <p class="offers_item_date flex center">14 FEB 2022</p>
+          </div>
+
+          <p class="offers_item_details">
+            <em class="em_pink">Relax</em> 3Days, 3 Nights
+          </p>
+
+          <h3 class="offers_item_title">Loga Sea</h3>
+
+          <div class="flex justify_between align-center">
+            <p class="offers_item_price">700$<span>/Person</span></p>
+            <button class="button_small button_light_blue">Book Now</button>
+          </div>
+        </article>
+
+        <article class="offers_item">
+          <div class="flex justify_between">
+            <img alt="" src="./images/image3.png" />
+            <p class="offers_item_date flex center">18 JUN 2022</p>
+          </div>
+
+          <p class="offers_item_details">
+            <em class="em_blue">Adventure</em> 4Days, 3 Nights
+          </p>
+
+          <h3 class="offers_item_title">Ansgar Scheffold</h3>
+          <div class="flex justify_between align-center">
+            <p class="offers_item_price">400$<span>/Person</span></p>
+            <button class="button_small button_light_blue">Book Now</button>
+          </div>
+        </article>
+
+        <article class="offers_item">
+          <div class="flex justify_between">
+            <img alt="" src="./images/image4.png" />
+            <p class="offers_item_date flex center">22 DEC 2022</p>
+          </div>
+
+          <p class="offers_item_details">
+            <em class="em_pink">Relax</em> 7Days, 6 Nights
+          </p>
+
+          <h3 class="offers_item_title">Loga Sea</h3>
+          <div class="flex justify_between align-center">
+            <p class="offers_item_price">700$<span>/Person</span></p>
+            <button class="button_small button_light_blue">Book Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 3 : PUB -->
+
+    <section class="flex">
+      <div class="relative">
+        <img alt="un hommer regarde la mer" src="images/image5.png" />
+        <div class="infobulle_bulle1 align_center relative">
+          <em class="em_big_blue_text">300+</em> DESTINATIONS
+        </div>
+        <div class="infobulle_bulle2 align_center relative">
+          <em class="em_big_blue_text">5000+</em> TOURISTS
+        </div>
+        <div class="infobulle_bulle3 align_center relative">
+          <em class="em_big_blue_text">150+</em> HOTELS
+        </div>
+      </div>
+
+      <div class="anycorner_article flex column">
+        <h2 class="section_title">Travel Any Corner of The World With Us</h2>
+        <p>
+          Would you explore nature paradise in the world, let’s find the best
+          destination in world with us, Would you explore nature paradise in
+          the world, let’s find the best destination in world with us. Would
+          you explore nature paradise in the world, let’s find the best
+          destination in world with us.
+        </p>
+        <p>
+          Would you explore nature paradise in the world, let’s find the best
+          destination in world with us.
+        </p>
+        <button class="button_large blue_button_inverted">Contact Us</button>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
